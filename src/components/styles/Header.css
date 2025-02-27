@@ -1,0 +1,50 @@
+@media (prefers-color-scheme: dark) {
+}
+
+.header {
+  overflow: hidden;
+  padding: 10px 10px;
+  position: relative;
+}
+
+.header a {
+  float: left;
+  color: rgb(190, 0, 0);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.imgLogo {
+  width: 8%;
+  float: left;
+  color: rgb(190, 0, 0);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* button */
+.header a.active {
+  background-color: rgb(190, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+.imgHeader{
+  align-items: center;
+  position: relative;
+}
