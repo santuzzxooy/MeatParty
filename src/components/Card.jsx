@@ -1,28 +1,17 @@
 import './styles/Card.css'
 
-const Card = () => {
+const Card = ({ titulo }) => {
     return (
-        <div>
-            <div className='box'>
-                <img src="https://picsum.photos/200/300" alt="" />
-            </div>
-            <div className='box'>
-                <img src="https://picsum.photos/200/300" alt="" />
-            </div>
-            <div className='box'>
-                <img src="https://picsum.photos/200/300" alt="" />
-            </div>
-            <div className='box'>
-                <img src="https://picsum.photos/200/300" alt="" />
-            </div>
-            <div className='box'>
-                <img src="https://picsum.photos/200/300" alt="" />
-            </div>
-            <div className='box'>
-                <img src="https://picsum.photos/200/300" alt="" />
-            </div>
-            <div className='box'>
-                <img src="https://picsum.photos/200/300" alt="" />
+        <div className="container">
+            <div className="card">
+                <h2 className="title">{titulo}</h2>
+                <div className="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div className="img">
+                    <img src="https://picsum.photos/400/300" alt="" />
+                </div>
             </div>
         </div>
     )

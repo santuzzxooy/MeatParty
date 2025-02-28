@@ -10,10 +10,11 @@ function App() {
       <ParticlesComponent id='particles'/>
       <Telegram />
       <Header />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <Card titulo="Evento X"/>
+      <Card titulo="Evento X"/>
+      <Card titulo="Evento X"/>
+      <Card titulo="Evento X"/>
+      <Card titulo="Evento X"/>
     </div>
   )
 }
