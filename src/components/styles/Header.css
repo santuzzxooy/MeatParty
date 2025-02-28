@@ -1,26 +1,44 @@
 @media (prefers-color-scheme: dark) {
 }
 
+@font-face {
+  font-family: face;
+  src: url("./Road_Rage.otf");
+}
+
 .header {
+  font-family: face;
   overflow: hidden;
   padding: 10px 10px;
-  position: relative;
+  top: 0px;
+  position: absolute;
+  user-select: none;
 }
 
 .header a {
   float: left;
-  color: rgb(190, 0, 0);
+  color: rgb(146, 0, 0);
   text-align: center;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
+  line-height: 25px;
+  margin: 10px;
+}
+
+.header h1 {
+  float: left;
+  color: rgb(146, 0, 0);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
   line-height: 25px;
 }
 
 .imgLogo {
   width: 8%;
   float: left;
-  color: rgb(190, 0, 0);
+  color: rgb(146, 0, 0);
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -35,16 +53,19 @@
 
 /* button */
 .header a.active {
-  background-color: rgb(190, 0, 0);
+  background-color: rgb(146, 0, 0);
   color: rgb(0, 0, 0);
+}
+
+.header a.active:hover {
+  box-shadow: 0 0 5px rgb(146, 0, 0),
+  0 0 25px rgb(146, 0, 0),
+  0 0 0px rgb(146, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(146, 0, 0);
 }
 
 /* Float the link section to the right */
 .header-right {
   float: right;
-}
-
-.imgHeader{
-  align-items: center;
-  position: relative;
 }
