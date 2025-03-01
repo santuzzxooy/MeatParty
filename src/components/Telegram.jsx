@@ -7,7 +7,7 @@ const Telegram = () => {
 
             <div class="tooltip-container">
 
-                <a href="https://t.me/hydrogarden" class="telegram-icon-float" target="_blank">
+                <a href="https://t.me/MeatBoyParty" class="telegram-icon-float" target="_blank">
                     <i class="fab fa-telegram my-float">
                         <span class="tooltip">Canal de Telegram</span>
                     </i>

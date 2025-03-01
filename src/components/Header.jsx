@@ -7,7 +7,7 @@ const Header = () => {
             <img src={micro_boy} alt='' className="imgLogo" />
             <h1>Meat Boy Party</h1>
             <div className="header-right">
-                <a className="active" href="#home">Entradas</a>
+                <a className="active" href="/Entradas">Entradas</a>
                 <a href="#contact">Ingresar</a>
                 <a href="#about">Registarme</a>
             </div>
