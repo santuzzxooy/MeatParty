@@ -1,0 +1,25 @@
+@font-face {
+  font-family: face;
+  src: url("./Road_Rage.otf");
+}
+
+.container {
+  font-family: face;
+  display: grid;
+  margin-top: 100px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  user-select: none;
+}
+
+.item {
+  border-radius: 5px;
+  width: 90%;
+  padding: 25px;
+  z-index: 70;
+  background-color: rgba(56, 56, 56, 0.541);
+  color: rgb(255, 255, 255);
+}

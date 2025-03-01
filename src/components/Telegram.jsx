@@ -9,7 +9,7 @@ const Telegram = () => {
 
                 <a href="https://t.me/hydrogarden" class="telegram-icon-float" target="_blank">
                     <i class="fab fa-telegram my-float">
-                        <span class="tooltip">Unete a nuestro canal de Telegram</span>
+                        <span class="tooltip">Canal de Telegram</span>
                     </i>
                 </a>
                 </div>

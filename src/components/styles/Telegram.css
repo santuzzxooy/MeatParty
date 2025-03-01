@@ -2,21 +2,21 @@
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
-	left:50px;
+	bottom:45px;
+	left:20px;
 	background-color:rgb(146, 0, 0);
 	color:rgb(0, 0, 0);
 	border-radius:50px;
 	text-align:center;
   font-size:40px;
 	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+  z-index:200;
 }
 
 .telegram-icon-float:hover {
-	box-shadow: 0 0 5px rgb(146, 0, 0),
-  0 0 25px rgb(146, 0, 0),
-  0 0 100px rgb(146, 0, 0);
+	box-shadow: 0 0 5px rgb(255, 255, 255),
+  0 0 25px rgb(255, 255, 255),
+  0 0 100px rgb(255, 255, 255);
 }
 
 .my-float {
@@ -33,7 +33,7 @@
 .tooltip {
     opacity: 0;
     z-index: 99;
-    width: 140px;
+    width: 100px;
     display: block;
     font-size: 15px;
     font-weight: bold;

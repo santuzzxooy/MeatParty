@@ -1,8 +1,9 @@
 import './App.css'
 import ParticlesComponent from './components/Particles'
 import Header from './components/Header'
-import Card from './components/Card'
+import InitCard from './components/InitCard'
 import Telegram from './components/Telegram'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -10,11 +11,8 @@ function App() {
       <ParticlesComponent id='particles'/>
       <Telegram />
       <Header />
-      <Card titulo="Evento X"/>
-      <Card titulo="Evento X"/>
-      <Card titulo="Evento X"/>
-      <Card titulo="Evento X"/>
-      <Card titulo="Evento X"/>
+      <InitCard/>
+      <Footer />
     </div>
   )
 }
