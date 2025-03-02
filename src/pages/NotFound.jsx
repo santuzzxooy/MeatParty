@@ -1,26 +1,30 @@
 import React from 'react'
 import './styles/NotFound.css'
 import NotFoundImg from './images/NotFoundImg.png'
+import SadBoy from './images/SadBoy.png'
+import CrazyMoon from './images/CrazyMoon.png'
+import CrazySun from './images/CrazySun.png'
+import Header from '../components/Header'
 
 const NotFound = () => {
     return (
         <div>
             <body class="bg-purple">
-        
+            <Header className='Header'/>
         <div class="stars">
-            <div class="central-body">
-                <h1>Parece que te haz perdido en el espacio</h1>
+            <div className="central-body">
+                <h1>Te perdiste?</h1>
+                <a href="/" className="active">INICIO</a>
                 <img class="image-404" src={NotFoundImg} width="300px"/>
-                <a href="/" class="btn-go-home">VOLVER AL INICIO</a>
             </div>
             <div class="objects">
                 <img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px"/>
                 <div class="earth-moon">
-                    <img class="object_earth" src="http://salehriaz.com/404Page/img/earth.svg" width="100px"/>
-                    <img class="object_moon" src="http://salehriaz.com/404Page/img/moon.svg" width="80px"/>
+                    <img class="object_moon" src={CrazyMoon} width="150px"/>
+                    <img class="object_sun" src={CrazySun} width="200px"/>
                 </div>
                 <div class="box_astronaut">
-                    <img class="object_astronaut" src="http://salehriaz.com/404Page/img/astronaut.svg" width="140px"/>
+                    <img class="object_astronaut" src={SadBoy} width="150px"/>
                 </div>
             </div>
             <div class="glowing_stars">
@@ -29,7 +33,10 @@ const NotFound = () => {
                 <div class="star"></div>
                 <div class="star"></div>
                 <div class="star"></div>
-
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
             </div>
 
         </div>
