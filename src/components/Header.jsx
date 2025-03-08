@@ -1,17 +1,26 @@
 import './styles/Header.css'
 import micro_boy from './images/micro_boy.gif'
+import { AiOutlineUnorderedList } from "react-icons/ai";
 
 const Header = () => {
     return (
-        <div className="header">
-            <img src={micro_boy} alt='' className="imgLogo" />
-            <h1>Meat Boy Party</h1>
-            <div className="header-right">
-                <a className="active" href="/Entradas">Entradas</a>
-                <a href="#contact">Ingresar</a>
-                <a href="#about">Registarme</a>
+        <nav className="header">
+            <div className='logo-container'>
+                <a href="#" className="logo">
+                    <img src={micro_boy} alt='?' className="imgLogo" />
+                    <h1>Meat Boy Party</h1>
+                </a>
             </div>
-        </div>
+            <input type="checkbox" id="check" />
+            <label htmlFor="check" className='checkbtn'>
+                <AiOutlineUnorderedList />
+            </label>
+            <ul className="header-right">
+                <li><a className="active" href="/Entradas">Entradas</a></li>
+                <li><a className='normal' href="#contact">Ingresar</a></li>
+                <li><a className='normal' href="#about">Registrarme</a></li>
+            </ul>
+        </nav>
     )
 }
 
