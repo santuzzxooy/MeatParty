@@ -1,6 +1,7 @@
 import './styles/Header.css'
 import micro_boy from './images/micro_boy.gif'
 import { AiOutlineUnorderedList } from "react-icons/ai";
+import { IoMdArrowDropleftCircle } from "react-icons/io";
 
 const Header = () => {
     return (
@@ -13,12 +14,12 @@ const Header = () => {
             </div>
             <input type="checkbox" id="check" />
             <label htmlFor="check" className='checkbtn'>
-                <AiOutlineUnorderedList />
+            <IoMdArrowDropleftCircle />
             </label>
-            <ul className="header-right">
+            <ul>
                 <li><a className="active" href="/Entradas">Entradas</a></li>
                 <li><a className='normal' href="#contact">Ingresar</a></li>
-                <li><a className='normal' href="#about">Registrarme</a></li>
+                <li><a className='ultimo' href="#about">Registrarme</a></li>
             </ul>
         </nav>
     )
