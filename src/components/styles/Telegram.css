@@ -77,3 +77,20 @@
     -ms-transform: scale(1);
     transform: scale(1);
 }
+
+@media (max-width: 858px){
+  .telegram-icon-float {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:45px;
+    left:20px;
+    background-color:rgb(146, 0, 0);
+    color:rgb(0, 0, 0);
+    border-radius:50px;
+    text-align:center;
+    font-size:40px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:200;
+  }
+}

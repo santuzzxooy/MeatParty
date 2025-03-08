@@ -1,5 +1,6 @@
 import ParticlesComponent from '../components/Particles'
 import Header from '../components/Header'
+import Banner from '../components/Banner'
 import InitCard from '../components/InitCard'
 import Telegram from '../components/Telegram'
 import Footer from '../components/Footer'
@@ -11,8 +12,7 @@ function Home() {
       <ParticlesComponent id='particles'/>
       <Telegram />
       <Header />
-      <InitCard/>
-      <Footer />
+      <Banner />
     </div>
   )
 }
