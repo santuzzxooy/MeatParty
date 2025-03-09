@@ -13,6 +13,10 @@ function Home() {
       <Telegram />
       <Header />
       <Banner />
+      <InitCard />
+      <InitCard />
+      <InitCard />
+      <Footer />
     </div>
   )
 }

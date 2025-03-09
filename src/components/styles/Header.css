@@ -29,6 +29,7 @@
   float: left;
   color: rgb(146, 0, 0);
   text-align: center;
+  border: 1px solid;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
@@ -39,8 +40,8 @@
 
 .active {
   float: left;
-  color: rgb(146, 0, 0);
   text-align: center;
+  border: 1px solid;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
@@ -52,6 +53,7 @@
   float: left;
   color: rgb(146, 0, 0);
   text-align: center;
+  border: 1px solid;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
