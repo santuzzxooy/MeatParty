@@ -7,9 +7,9 @@ import SignIn from '../pages/SignIn'
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path='/meat-party' element={<Home/>} />
-      <Route path='/meat-party/tickets' element={<Tickets/>} />
-      <Route path='/meat-party/ingresar' element={<SignIn/>} />
+      <Route path='/MeatParty' element={<Home/>} />
+      <Route path='/MeatParty/tickets' element={<Tickets/>} />
+      <Route path='/MeatParty/ingresar' element={<SignIn/>} />
       <Route path='/*' element={<NotFound/>} />
     </Routes>
   )
