@@ -3,7 +3,7 @@
   src: url("./Road_Rage.otf");
 }
 
-.container {
+.container_init_card{
   font-family: face;
   display: grid;
   margin-top: 100px;
@@ -15,7 +15,7 @@
   user-select: none;
 }
 
-.item {
+.item_init_card {
   border-radius: 5px;
   width: 90%;
   padding: 25px;

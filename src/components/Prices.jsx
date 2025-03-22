@@ -6,8 +6,9 @@ import { LiaPiggyBankSolid } from "react-icons/lia";
 
 const Prices = () => {
     return (
-        <div>
+        <div className='prices_page'>
             <section className="pricing">
+                <h1>asdflkjsdajkhlsdajklsdfa</h1>
                 <div className="cards-wrapper">
                     <div className="price-card clr-1">
                         <div className="price-container">
@@ -94,8 +95,8 @@ const Prices = () => {
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="item">
+                <div class="container_prices">
+                    <div class="item_prices">
                         <h1>Los precios mostrados en esta pagina varian segun la etapa</h1>
                         <h3>A pocos pasos de vivir la experiencia de un rave underground nunca antes visto en
                             la ciudad</h3>

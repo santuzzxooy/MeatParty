@@ -3,6 +3,10 @@
   z-index: 50;
 }
 
+.pricing h1 {
+  color: aqua;
+}
+
 .cards-wrapper {
   --gutter: 30px;
   display: flex;
@@ -76,7 +80,6 @@
 }
 
 .plan {
-  margin: 30px 0;
   text-transform: capitalize;
   font-size: 30px;
   color: var(--text-clr);
@@ -111,7 +114,7 @@
 }
 
 .deliverable:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .deliverable span:first-child {
@@ -143,6 +146,32 @@
   color: rgb(146, 0, 0);
 }
 
+.container_prices {
+  font-family: face;
+  display: grid;
+  margin-top: 25px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  user-select: none;
+}
+
+.container_prices h3 {
+  color: #ff0000;
+}
+
+.item_prices {
+  border-radius: 5px;
+  width: 90%;
+  padding: 25px;
+  z-index: 70;
+  background-color: rgba(56, 56, 56, 0.541);
+  color: rgb(255, 255, 255);
+}
+
+
 @media (max-width: 1200px) {
   .cards-wrapper {
     flex-wrap: wrap;
@@ -158,6 +187,12 @@
 
   .price-card {
     margin-top: 20px;
+  }
+  .container {
+    margin-top: 30px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -193,24 +228,4 @@
   .btn {
     padding: 0.5em 2em;
   }
-}
-
-.container {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  user-select: none;
-}
-
-.item {
-  border-radius: 5px;
-  width: 90%;
-  padding: 25px;
-  margin: 20px;
-  z-index: 70;
-  background-color: rgba(56, 56, 56, 0.541);
-  color: rgb(255, 255, 255);
 }

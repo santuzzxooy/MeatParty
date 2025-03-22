@@ -2,8 +2,8 @@ import './styles/InitCard.css'
 
 const InitCard = () => {
     return (
-        <div class="container">
-            <div class="item">
+        <div class="container_init_card">
+            <div class="item_init_card">
                 <h2>Bienvenido!!!</h2>
                 <h3>A pocos pasos de vivir la experiencia de un rave underground nunca antes visto en
                     la ciudad</h3>

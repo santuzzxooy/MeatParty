@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <nav className="header">
             <div className='logo-container'>
-                <Link to="/" className="logo">
+                <Link to="/meat-party" className="logo">
                     <img src={micro_boy} alt='?' className="imgLogo" />
                     <h1>Meat Boy Party</h1>
                 </Link>
@@ -17,9 +17,9 @@ const Header = () => {
                 <IoMdArrowDropleftCircle />
             </label>
             <ul>
-                <li><Link className="active" to="/tickets">Tickets</Link></li>
-                <li><a className='normal' href="#">Ingresar</a></li>
-                <li><a className='ultimo' href="#">Registrarme</a></li>
+                <li><Link className="active" to="/meat-party/tickets">Tickets</Link></li>
+                <li><Link className='normal' to="/meat-party/ingresar">Ingresar</Link></li>
+                <li><Link className='ultimo' to="#">Registrarme</Link></li>
             </ul>
         </nav>
     )
