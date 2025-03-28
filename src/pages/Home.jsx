@@ -9,8 +9,7 @@ import '../App.css'
 function Home() {
   return (
     <div>
-      <ParticlesComponent id='particles'/>
-      <Telegram />
+      <ParticlesComponent />
       <Header />
       <Banner />
     </div>

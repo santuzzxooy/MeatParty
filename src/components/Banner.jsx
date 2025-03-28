@@ -1,15 +1,15 @@
-import './styles/Banner.css'
-import { Link } from "react-router";
+import './styles/Banner.css';
+import { Link } from "react-router-dom"; // Corregido: "react-router-dom"
 
 const Banner = () => {
     return (
-        <div className='banner_area'>
+        <div className="banner_area">
             <ul>
-                <li><Link to="/MeatParty/tickets" className='texto'>tickets virtuales</Link></li>
-                <li><Link to="/MeatParty/tickets" className='boton'>Comprar</Link></li>
+                <li><Link to="/MeatParty/tickets" className="banner-text">Tickets Virtuales</Link></li>
+                <li><Link to="/MeatParty/tickets" className="banner-button">Comprar</Link></li>
             </ul>
         </div>
-    )
+    );
 }
 
-export default Banner
+export default Banner;
