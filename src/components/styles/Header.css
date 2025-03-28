@@ -1,202 +1,154 @@
-@media (prefers-color-scheme: dark) {
-}
-
 @font-face {
-  font-family: face;
+  font-family: "face";
   src: url("./Road_Rage.otf");
 }
 
 .header {
-  font-family: face;
-  overflow: hidden;
+  font-family: "face";
   width: 100%;
   height: 90px;
-  top: 0px;
   position: relative;
   display: flex;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.123);
-  user-select: none;
   justify-content: space-between;
-  list-style: none;
+  align-items: center;
+  user-select: none;
+  padding: 0 20px;
+  z-index: 100;
 }
 
-.header ul li {
-  display: inline-block;
+/* Logo */
+.header-logo-container {
+  display: flex;
+  align-items: center;
 }
 
-.ultimo {
-  float: left;
-  color: rgb(146, 0, 0);
-  text-align: center;
-  border: 1px solid;
-  padding: 12px;
+.header-logo {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  margin: 10px;
-  margin-right: 30px;
 }
 
-.active {
-  float: left;
-  text-align: center;
-  border: 1px solid;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  margin: 10px;
-}
-
-.normal {
-  float: left;
-  color: rgb(146, 0, 0);
-  text-align: center;
-  border: 1px solid;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  margin: 10px;
-}
-
-.header h1 {
-  float: left;
-  color: rgb(146, 0, 0);
-  text-align: center;
-  text-decoration: none;
-  font-size: 27px;
-  padding-left: 15px;
-}
-
-.imgLogo {
+.header-imgLogo {
   height: 70px;
-  float: left;
+  margin-right: 10px;
+}
+
+.header-title {
   color: rgb(146, 0, 0);
-  text-align: center;
-  padding: 12px;
+  font-size: 27px;
+}
+
+/* Menú */
+.header-menu {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding-right: 30px;
+}
+
+.header-link {
   text-decoration: none;
-
+  padding: 12px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid rgb(146, 0, 0);
+  color: rgb(146, 0, 0);
+  transition: 0.3s;
 }
 
-/* Change the background color on mouse-over */
-.normal:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.ultimo:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* button */
-.header a.active {
+.header-active {
   background-color: rgb(146, 0, 0);
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
-.header a.active:hover {
-  box-shadow: 0 0 5px rgb(146, 0, 0),
-  0 0 25px rgb(146, 0, 0),
-  0 0 50px rgb(146, 0, 0);
-  background-color: rgb(0, 0, 0);
+.header-active:hover {
+  box-shadow: 0 0 5px rgb(146, 0, 0), 0 0 25px rgb(146, 0, 0);
+  background-color: black;
   color: rgb(146, 0, 0);
 }
 
-.checkbtn {
+.header-link:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Botón menú móvil */
+.header-checkbtn {
   font-size: 30px;
   color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
   cursor: pointer;
   display: none;
 }
 
-#check {
+.header-check {
   display: none;
 }
 
-@media (max-width: 952px){
-  .logo {
-    font-size: 30px;
-    padding-left: 50px;
+/* Responsive */
+@media (max-width: 858px) {
+  .header-checkbtn {
+      display: block;
+      margin-right: 20px;
   }
-  .header a{
-    font-size: 16px;
+
+  .header-menu {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.795);
+      backdrop-filter: blur(10px);
+      top: 85px;
+      right: -120%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 30px;
+      padding-top: 50px;
+      transition: all 0.5s ease;
+  }
+
+  .header-menu li {
+      width: 80%;
+      background-color: rgba(0, 0, 0, 0.178);
+      backdrop-filter: blur(5px);
+      border-radius: 5px;
+      margin-top: 20px;
+      margin-left: 25px;
+  }
+
+  .header-menu .header-link {
+      width: 100%;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid rgb(146, 0, 0);
+      background-color: black;
+  }
+
+  .header-check:checked ~ .header-menu {
+      right: 0;
   }
 }
 
-@media (max-width: 858px){
-  .checkbtn {
-    display: block;
+@media (max-width: 480px) {
+  .header-imgLogo {
+      height: 40px;
   }
 
-  .header ul {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.795);
-    backdrop-filter: blur(10px);
-    top: 85px;
-    right: -115%;
-    text-align: center;
-    transition: all 0.5s ease;
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px; /* Espacio entre botones */
-  }
-
-  .header a.active {
-    background-color: rgb(0, 0, 0);
-    color: rgb(146, 0, 0);
-    border: 2px solid rgb(146, 0, 0);
-  }
-
-  .header ul li {
-    width: 80%; /* Ancho de cada botón */
-    background-color: rgba(0, 0, 0, 0.178);
-    backdrop-filter: blur(5px);
-    border-radius: 5px;
-    margin-top: 20px;
-  }
-
-  .header ul li a {
-    width: 88%;
-    height: 70%;
-    display: flex;         /* Convierte el enlace en un contenedor flexible */
-    align-items: center;   /* Centra verticalmente el texto */
-    justify-content: center; /* Centra horizontalmente el texto */
-    text-align: center; 
-    border: 2px solid rgb(146, 0, 0);
-    font-size: 25px; /* Tamaño más grande para móviles */
-    background-color: rgb(0, 0, 0);
-  }
-
-  #check:checked ~ ul {
-    right: 0;
+  .header-title {
+      font-size: 25px;
   }
 }
 
-@media (max-width: 480px){
-  .imgLogo {
-    height: 40px;
+@media (max-width: 418px) {
+  .header-imgLogo {
+      height: 26px;
   }
-  h1 {
-    font-size: 25px;
-  }
-}
 
-@media (max-width: 418px){
-  .imgLogo {
-    height: 26px;
-  }
-  h1 {
-    font-size: 18px;
+  .header-title {
+      font-size: 18px;
   }
 }
