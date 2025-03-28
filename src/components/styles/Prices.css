@@ -158,4 +158,12 @@
     width: 40px;
     left: 20px;
   }
+
+  .price span:first-child,
+  .price span:last-child  {
+    text-shadow: none;
+    -webkit-text-stroke: 0;
+    animation: none;
+    text-shadow: none;
+  }
 }

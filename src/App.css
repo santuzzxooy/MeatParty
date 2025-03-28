@@ -3,6 +3,12 @@
     src: url("./Road_Rage.otf");
 }
 
+:root {
+    color-scheme: dark;
+    background-color: black; /* Asegura un fondo oscuro */
+    color: white; /* Asegura texto claro */
+}
+
 body,
 html {
     margin: 0;

@@ -1,11 +1,15 @@
+import useIsMobile from "../hooks/useIsMobile";
 import ParticlesComponent from '../components/Particles';
 import Header from '../components/Header';
 import './styles/SignIn.css';
 
 const SignIn = () => {
+
+  const isMobile = useIsMobile();
+
   return (
     <>
-      <ParticlesComponent id="particles" />
+      {!isMobile && <ParticlesComponent />}
       <Header className="Header" />
 
       <form className="login-form">

@@ -1,20 +1,21 @@
-import ParticlesComponent from '../components/Particles'
-import Header from '../components/Header'
-import Banner from '../components/Banner'
-import InitCard from '../components/InitCard'
-import Telegram from '../components/Telegram'
-import Footer from '../components/Footer'
-import '../App.css'
+import UseIsMobile from "../hooks/UseIsMobile";
+import ParticlesComponent from "../components/Particles";
+import Header from "../components/Header";
+import Banner from "../components/Banner";
+import Telegram from "../components/Telegram";
+import "../App.css";
 
 function Home() {
+  const isMobile = UseIsMobile();
+
   return (
     <div>
-      <ParticlesComponent />
+      {!isMobile && <ParticlesComponent />}
       <Header />
       <Banner />
-      <Telegram/>
+      <Telegram />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
