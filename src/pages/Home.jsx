@@ -12,6 +12,7 @@ function Home() {
       <ParticlesComponent />
       <Header />
       <Banner />
+      <Telegram/>
     </div>
   )
 }

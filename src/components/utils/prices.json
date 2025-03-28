@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Solo",
+      "price": 30,
+      "currency": "K",
+      "features": [
+        { "text": "1 Ticket", "icon": "IoTicketOutline" },
+        { "text": "Precio full", "icon": "TbMoodSadDizzy" },
+        { "text": "Caramelo de soledad", "icon": "LuCandy" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Duo",
+      "price": 50,
+      "currency": "K",
+      "features": [
+        { "text": "2 Tickets", "icon": "IoTicketOutline", "repeat": 2 },
+        { "text": "Descuento 15%", "icon": "LiaPiggyBankSolid" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Panas",
+      "price": 120,
+      "currency": "K",
+      "features": [
+        { "text": "5 Tickets", "icon": "IoTicketOutline", "repeat": 5 },
+        { "text": "Descuento 20%", "icon": "LiaPiggyBankSolid", "repeat": 2 }
+      ]
+    }
+  ]

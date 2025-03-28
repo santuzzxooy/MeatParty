@@ -1,76 +1,72 @@
 .login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
-  padding: 2em;
-  position: relative;
-  background: rgba(black, .15);
-  
-  &:before {
-    content: '';
-    position: absolute;
-    top: -2px; left: 0;
-    height: 2px; width: 100%;
-    
-    background: linear-gradient(
-      to right,
-    );    
-  }
-  
-  @media screen and (min-width: 600px) {
-    width: 50vw;
-    max-width: 15em;
-  }
+  max-width: 400px;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-  .flex-row {
-    display: flex;
-    margin-bottom: 1em;
-  }
-  
-  .lf--label {
-    width: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  .lf--input {
-    flex: 1;
-    padding: 1em;
-    border: 0;
-    font-size: 1rem;
+/* Estructura de los campos */
+.flex-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
 
-    &:focus {
-      outline: none;
-      transition: transform .15s ease;
-      transform: scale(1.1);
-    }
-  }
+/* Etiqueta */
+.lf--label {
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
-  .lf--submit {
-    display: block;
-    padding: 1em;
-    width: 100%;
-    
-    background: linear-gradient(
-      to right,
-    );
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-    font-size: .75em;
-    font-weight: 600;
-    text-shadow: 0 1px 0 rgba(black, .2);
-    
-    &:focus {
-      outline: none;
-      transition: transform .15s ease;
-      transform: scale(1.1);
-    }
-  }
+/* Campos de entrada */
+.lf--input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
 
+.lf--input:focus {
+  outline: none;
+  border-color: rgb(146, 0, 0);
+  transition: 0.3s;
+}
+
+/* Botón de enviar */
+.lf--submit {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: rgb(146, 0, 0);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.lf--submit:hover {
+  background: rgb(146, 0, 0);
+}
+
+/* Enlace de "Forgot Password" */
 .lf--forgot {
-  margin-top: 1em;
-  font-size: .65em;
+  display: block;
   text-align: center;
-  position: relative;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  color: rgb(146, 0, 0);
+  text-decoration: none;
+}
+
+.lf--forgot:hover {
+  text-decoration: underline;
 }

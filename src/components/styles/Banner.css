@@ -27,6 +27,7 @@
     font-size: 50px;
     color: white;
     text-decoration: none;
+    -webkit-text-stroke: 1px black;
 }
 
 /* Contenedor para centrar el botón */
@@ -73,10 +74,10 @@
 @media (max-width: 666px) {
     .banner-text {
         font-size: 35px;
+        -webkit-text-stroke: 1px black;
     }
 
     .banner-mouse {
-        width: 35px;
         left: 35%;
     }
 }

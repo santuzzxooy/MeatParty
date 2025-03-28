@@ -1,6 +1,6 @@
 import './styles/Banner.css';
 import { Link } from "react-router-dom";
-import pixelMouse from './images/pixelMouse.gif'; // Asegúrate de que la imagen esté en la carpeta correcta
+import pixelMouse from './images/pixelMouse.gif';
 
 const Banner = () => {
     return (

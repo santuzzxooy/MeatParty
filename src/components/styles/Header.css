@@ -40,6 +40,7 @@
 .header-title {
   color: rgb(146, 0, 0);
   font-size: 27px;
+  -webkit-text-stroke: 0.1px rgba(255, 255, 255, 0.062);
 }
 
 /* Menú */
