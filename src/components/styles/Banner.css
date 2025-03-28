@@ -29,17 +29,31 @@
     text-decoration: none;
 }
 
-.banner-button {
-    color: black;
-    background-color: rgb(146, 0, 0);
-    border: 1px solid black;
-    padding: 12px 20px;
-    font-size: 18px;
-    text-decoration: none;
-    transition: 0.3s;
+/* Contenedor para centrar el botón */
+.banner-buy-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Hace que el contenedor ocupe todo el ancho */
 }
 
-.banner-button:hover {
+/* Botón de Comprar centrado */
+.banner-buy-text {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(146, 0, 0);
+    padding: 10px 15px;
+    border: 1px solid black;
+    transition: 0.3s;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Efecto hover */
+.banner-buy-text:hover {
     box-shadow: 0 0 5px rgb(146, 0, 0),
                 0 0 25px rgb(146, 0, 0),
                 0 0 50px rgb(146, 0, 0);
@@ -47,8 +61,22 @@
     color: rgb(146, 0, 0);
 }
 
+.banner-mouse {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    left: 40%;
+    transform: translateX(-100%);
+}
+
+/* Responsive */
 @media (max-width: 666px) {
     .banner-text {
         font-size: 35px;
+    }
+
+    .banner-mouse {
+        width: 35px;
+        left: 35%;
     }
 }

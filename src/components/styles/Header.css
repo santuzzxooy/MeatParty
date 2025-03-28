@@ -3,6 +3,12 @@
   src: url("./Road_Rage.otf");
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .header {
   font-family: "face";
   width: 100%;
@@ -81,37 +87,43 @@
   display: none;
 }
 
+.header-closebtn {
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 /* Responsive */
 @media (max-width: 858px) {
   .header-checkbtn {
       display: block;
-      margin-right: 20px;
+      margin-right: 10px;
   }
 
   .header-menu {
     position: fixed;
-    top: 72px;
+    background-color: rgb(0, 0, 0);
+    top: -16px;
     right: 0;
     width: 100%;
-    height: 90%;
-    background: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(10px);
+    height: 100%;
     transform: translateX(100%);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     transition: transform 0.4s ease-in-out;
 }
 
 .header-menu li {
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    border-radius: 5px;
-    margin-top: 10px;
+  width: auto;
+  margin-right: 30px;
 }
 
 .header-menu .header-link {
@@ -120,8 +132,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgb(146, 0, 0);
-    background-color: black;
     padding: 15px;
 }
 
@@ -129,6 +139,11 @@
 .header-check:checked ~ .header-menu {
     transform: translateX(0);
 }
+
+.header-check:checked ~ .header-menu .header-closebtn {
+  display: block;
+}
+
 }
 
 @media (max-width: 480px) {
