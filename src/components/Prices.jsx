@@ -3,7 +3,7 @@ import { IoTicketOutline } from "react-icons/io5";
 import { LuCandy } from "react-icons/lu";
 import { TbMoodSadDizzy } from "react-icons/tb";
 import { LiaPiggyBankSolid } from "react-icons/lia";
-import pixelMouse from './images/pixelMouse.gif';
+import pixelBoy from './images/pixelBoy.gif';
 import pricesData from './utils/prices.json';
 
 const iconMap = {
@@ -36,7 +36,7 @@ const Prices = () => {
                                 ))}
                             </div>
                             <div className="prices-align-center">
-                                <img src={pixelMouse} alt="Mouse pixelado" className="prices-mouse" />
+                                <img src={pixelBoy} alt="Mouse pixelado" className="prices-mouse" />
                                 <a href="#" className="prices-btn">Comprar</a>
                             </div>
                         </div>
