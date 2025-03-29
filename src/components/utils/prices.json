@@ -17,6 +17,7 @@
       "currency": "K",
       "features": [
         { "text": "2 Tickets", "icon": "IoTicketOutline", "repeat": 2 },
+        { "text": "Descuento 15%", "icon": "LiaPiggyBankSolid" },
         { "text": "Descuento 15%", "icon": "LiaPiggyBankSolid" }
       ]
     },
@@ -27,7 +28,8 @@
       "currency": "K",
       "features": [
         { "text": "5 Tickets", "icon": "IoTicketOutline", "repeat": 5 },
-        { "text": "Descuento 20%", "icon": "LiaPiggyBankSolid", "repeat": 2 }
+        { "text": "Descuento 20%", "icon": "LiaPiggyBankSolid", "repeat": 2 },
+        { "text": "Descuento 15%", "icon": "LiaPiggyBankSolid" }
       ]
     }
   ]

@@ -1,11 +1,11 @@
 import './styles/Banner.css';
-import useIsMobile from "../hooks/useIsMobile";
+import UseIsMobile from "../hooks/UseIsMobile";
 import { Link } from "react-router-dom";
 import pixelMouse from './images/pixelMouse.gif';
 
 const Banner = () => {
 
-    const isMobile = useIsMobile();
+    const isMobile = UseIsMobile();
 
     return (
         <div className="banner_area">

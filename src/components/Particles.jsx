@@ -1,5 +1,3 @@
-// este es el background de la pagina web
-
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim"; 
@@ -94,7 +92,7 @@ const ParticlesComponent = (props) => {
   );
 
 
-  return <Particles id={props.id} init={particlesLoaded} options={options} />; 
+  return <Particles id="tsparticles" init={particlesLoaded} options={options} />; 
 };
 
 export default ParticlesComponent

@@ -1,12 +1,5 @@
-.prices_page {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
 .pricing {
-  padding: 100px 0;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,29 +50,6 @@
 .price span:last-child {
   font-size: 40px;
   -webkit-text-stroke: 0.1px black;
-}
-
-@keyframes pricesglowEffect {
-  0% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-                 0 0 20px rgba(172, 172, 172, 0.6),
-                 0 0 30px rgba(29, 29, 29, 0.4);
-  }
-  50% {
-    text-shadow: 0 0 15px rgb(255, 255, 255),
-                 0 0 25px rgba(172, 172, 172, 0.6),
-                 0 0 35px rgba(29, 29, 29, 0.4);
-  }
-  100% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-                 0 0 20px rgba(172, 172, 172, 0.6),
-                 0 0 30px rgba(29, 29, 29, 0.4);
-  }
-}
-
-.price span:first-child,
-.price span:last-child {
-  animation: pricesglowEffect 1.5s infinite alternate;
 }
 
 .prices-plan {
