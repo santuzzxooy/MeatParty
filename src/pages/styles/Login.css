@@ -1,3 +1,9 @@
+@font-face {
+  font-family: face;
+  src: url("./Road_Rage.otf");
+}
+
+/* Formulario */
 .login-form {
   position: absolute;
   top: 50%;
@@ -11,14 +17,14 @@
 }
 
 /* Estructura de los campos */
-.flex-row {
+.login-flex-row {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
 
 /* Etiqueta */
-.lf--label {
+.login-label {
   width: 2rem;
   display: flex;
   align-items: center;
@@ -27,21 +33,22 @@
 }
 
 /* Campos de entrada */
-.lf--input {
+.login-input {
   flex: 1;
   padding: 0.8rem;
   border: 1px solid #ccc;
   font-size: 1rem;
 }
 
-.lf--input:focus {
+.login-input:focus {
   outline: none;
   border-color: rgb(146, 0, 0);
   transition: 0.3s;
 }
 
 /* Botón de enviar */
-.lf--submit {
+.login-submit {
+  font-family: "face";
   display: block;
   width: 100%;
   padding: 1rem;
@@ -53,12 +60,12 @@
   margin-top: 1rem;
 }
 
-.lf--submit:hover {
+.login-submit:hover {
   background: rgb(146, 0, 0);
 }
 
 /* Enlace de "Forgot Password" */
-.lf--forgot {
+.login-forgot {
   display: block;
   text-align: center;
   font-size: 0.85rem;
@@ -67,6 +74,6 @@
   text-decoration: none;
 }
 
-.lf--forgot:hover {
+.login-forgot:hover {
   text-decoration: underline;
 }

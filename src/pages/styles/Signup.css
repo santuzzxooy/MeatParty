@@ -1,0 +1,120 @@
+@font-face {
+  font-family: face;
+  src: url("./Road_Rage.otf");
+}
+
+/* Formulario */
+.signup-form {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estructura de los campos */
+.signup-flex-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Etiqueta */
+.signup-label {
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Campos de entrada */
+.signup-input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.signup-input:focus {
+  outline: none;
+  border-color: rgb(146, 0, 0);
+  transition: 0.3s;
+}
+
+/* Botón de enviar */
+.signup-submit {
+  font-family: "face";
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: rgb(146, 0, 0);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.signup-submit:hover {
+  background: rgb(120, 0, 0);
+}
+
+/* Mensajes de error */
+.signup-error {
+  color: red;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Mensajes de información */
+.signup-info {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.signup-verify-btn{
+  font-family: "face";
+  background-color: rgb(120, 0, 0);
+  color: #000000;
+  cursor: pointer;
+  padding: 7px;
+  border-color: black;
+  font-size: 10px;
+}
+
+.SUavailable {
+  color: green;
+}
+
+.SUnot-available {
+  color: red;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .signup-form {
+    width: 90%;
+  }
+  
+  .signup-label {
+    font-size: 16px;
+  }
+
+  .signup-input {
+    font-size: 14px;
+  }
+
+  .signup-submit {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .signup-verify-btn{
+    padding: 5px;
+    font-size: 8px;
+  }
+}

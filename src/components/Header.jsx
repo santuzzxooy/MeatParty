@@ -37,8 +37,8 @@ const Header = () => {
                     <IoMdClose />
                 </label>
                 <li><Link className="header-link header-active" to="/MeatParty/tickets">Tickets</Link></li>
-                <li><Link className="header-link" to="/MeatParty/ingresar">Ingresar</Link></li>
-                <li><Link className="header-link" to="#">Registrarme</Link></li>
+                <li><Link className="header-link" to="/MeatParty/login">Ingresar</Link></li>
+                <li><Link className="header-link" to="/MeatParty/signup">Registrarme</Link></li>
             </ul>
         </nav>
     );

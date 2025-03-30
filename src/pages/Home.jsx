@@ -10,10 +10,10 @@ function Home() {
   const isMobile = UseIsMobile();
 
   return (
-    <div className="home-container">
+    <div className="principAll-container">
       {!isMobile && <ParticlesComponent />}
       <Header />
-      <div className="main-content">
+      <div className="principMain-content">
         <Banner />
         <Telegram />
       </div>
