@@ -6,6 +6,40 @@
   padding: 20px;
 }
 
+.cart-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.cart-empty p {
+  font-size: 30px;
+}
+
+.cart-gotickets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.cart-gotickets img {
+  width: 50px;
+  height: auto;
+}
+
+.cart-gotickets p {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
 /* Lista de productos */
 .cart-item {
   display: flex;
@@ -49,5 +83,23 @@
 @media (max-width: 768px) {
   .cart-container {
     width: 90%;
+  }
+  .cart-gotickets {
+    flex-direction: column; /* Cambiar la dirección del contenedor para poner la imagen arriba del texto */
+    align-items: center; /* Alineamos los elementos en el centro */
+    text-align: center; /* Centrar el texto */
+  }
+
+  .cart-gotickets img {
+    width: 80px; /* Ajustar el tamaño de la imagen en móviles */
+    margin-bottom: 10px; /* Añadimos espacio entre la imagen y el texto */
+  }
+
+  .cart-empty p {
+    font-size: 20px; /* Reducir el tamaño de la fuente para móviles */
+  }
+
+  .cart-empty .banner-buy-text {
+    font-size: 16px; /* Reducir el tamaño del texto del enlace */
   }
 }

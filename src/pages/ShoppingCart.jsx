@@ -4,6 +4,8 @@ import ParticlesComponent from "../components/Particles";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Title from "../components/Title";
+import SadBoy from "../public/SadBoy.webp"
+import { Link } from "react-router-dom";
 import "./styles/ShoppingCart.css";
 
 const ShoppingCart = () => {
@@ -21,7 +23,14 @@ const ShoppingCart = () => {
         <Title />
         <div className="cart-container">
           {cart.length === 0 ? (
-            <p>Tu carrito está vacío.</p>
+            <div className="cart-empty">
+              <p>Tu carrito está vacío.</p>
+              <div className="cart-gotickets">
+                <img src={SadBoy} alt="Sad Boy" />
+                <p>¿Estás buscando tickets?</p>
+              </div>
+              <Link to="/MeatParty/tickets" className="banner-buy-text">Tickets</Link>
+            </div>
           ) : (
             <>
               <ul>
