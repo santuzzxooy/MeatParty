@@ -1,7 +1,7 @@
 import './styles/Banner.css';
 import UseIsMobile from "../hooks/UseIsMobile";
 import { Link } from "react-router-dom";
-import pixelMouse from './images/pixelMouse.gif';
+import pixelMouse from './images/pixelMouse.webp';
 
 const Banner = () => {
 

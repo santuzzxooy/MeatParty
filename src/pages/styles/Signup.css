@@ -52,8 +52,8 @@
   width: 100%;
   padding: 1rem;
   background: rgb(146, 0, 0);
+  border: 1px solid white;
   color: white;
-  border: none;
   font-size: 1rem;
   cursor: pointer;
   margin-top: 1rem;
@@ -112,6 +112,7 @@
 }
 
 /* Responsive */
+
 @media (max-width: 480px) {
   .signup-form {
     width: 90%;
@@ -130,8 +131,16 @@
     padding: 8px;
   }
 
-  .signup-verify-btn{
+  .signup-verify-btn {
     padding: 5px;
     font-size: 10px;
+  }
+
+  .signup-submit:hover {
+    background: rgb(146, 0, 0);
+  }
+
+  .password-toggle-btn:hover {
+    color: #666;
   }
 }

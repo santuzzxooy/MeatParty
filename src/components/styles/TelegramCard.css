@@ -1,0 +1,23 @@
+.telegram-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+  }
+  
+  .telegram-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(146, 0, 0);
+  }
+  
+  .telegram-text {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+  }
+  

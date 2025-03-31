@@ -8,11 +8,43 @@
     z-index: 500;
 }
 
+.card-evento-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .card-evento-title {
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 20px;
-    z-index: 500;
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    z-index: 2;
+}
+
+.card-evento-title-container::before,
+.card-evento-title-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 130px);
+    height: 6px;
+    background: rgb(146, 0, 0);
+    transform: translateY(-50%);
+    clip-path: polygon(0% 50%, 5% 0%, 15% 40%, 25% 0%, 35% 50%, 45% 0%, 55% 50%, 65% 0%, 75% 50%, 85% 0%, 95% 50%, 100% 50%, 90% 100%, 80% 60%, 70% 100%, 60% 50%, 50% 100%, 40% 60%, 30% 100%, 20% 50%, 10% 100%);
+}
+
+.card-evento-title-container::before {
+    left: 0;
+}
+
+.card-evento-title-container::after {
+    right: 0;
 }
 
 .card-evento-grid {
@@ -35,24 +67,24 @@
 .card-evento-card::after {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 4px solid rgb(146, 0, 0);
+    width: 0;
+    height: 0;
+    border-style: solid;
     z-index: 3;
 }
 
 .card-evento-card::before {
     top: 8px;
     left: 8px;
-    border-right: none;
-    border-bottom: none;
+    border-width: 30px 30px 0 0;
+    border-color: rgb(146, 0, 0) transparent transparent transparent;
 }
 
 .card-evento-card::after {
     bottom: 8px;
     right: 8px;
-    border-left: none;
-    border-top: none;
+    border-width: 0 0 30px 30px;
+    border-color: transparent transparent rgb(146, 0, 0) transparent;
 }
 
 .card-evento-card img {
@@ -68,10 +100,10 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    color: white;
-    -webkit-text-stroke: 0.5px black;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.5px rgb(146, 0, 0);
     padding: 5px 10px;
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 5px;
 }
 
@@ -88,5 +120,25 @@
 @media (max-width: 768px) {
     .card-evento-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-evento-label {
+        font-size: 20px;
+        -webkit-text-stroke: 0;
+    }
+
+    .card-evento-card::before {
+        border-width: 18px 18px 0 0;
+    }
+    
+    .card-evento-card::after {
+        border-width: 0 0 18px 18px;
+    }
+}
+
+/* Eliminar efectos hover en móviles */
+@media (hover: none) {
+    .card-evento-card:hover img {
+        transform: none;
     }
 }

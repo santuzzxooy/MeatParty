@@ -13,3 +13,22 @@
     margin-bottom: 0;
 }
 
+.title-container::before,
+.title-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 130px);
+    height: 6px;
+    background: rgb(146, 0, 0);
+    transform: translateY(-50%);
+    clip-path: polygon(0% 50%, 5% 0%, 15% 40%, 25% 0%, 35% 50%, 45% 0%, 55% 50%, 65% 0%, 75% 50%, 85% 0%, 95% 50%, 100% 50%, 90% 100%, 80% 60%, 70% 100%, 60% 50%, 50% 100%, 40% 60%, 30% 100%, 20% 50%, 10% 100%);
+}
+
+.title-container::before {
+    left: 0;
+}
+
+.title-container::after {
+    right: 0;
+}

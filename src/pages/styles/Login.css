@@ -53,15 +53,11 @@
   width: 100%;
   padding: 1rem;
   background: rgb(146, 0, 0);
+  border: 1px solid white;
   color: white;
-  border: none;
   font-size: 1rem;
   cursor: pointer;
   margin-top: 1rem;
-}
-
-.login-submit:hover {
-  background: rgb(146, 0, 0);
 }
 
 /* Enlace de "Forgot Password" */
@@ -74,10 +70,7 @@
   text-decoration: none;
 }
 
-.login-forgot:hover {
-  text-decoration: underline;
-}
-
+/* Icono de alternar contraseña */
 .password-toggle-btn {
   background: none;
   border: none;
@@ -87,6 +80,38 @@
   padding: 0 10px;
 }
 
-.password-toggle-btn:hover {
-  color: rgb(146, 0, 0);
+/* Responsive */
+@media (max-width: 480px) {
+  .login-form {
+    width: 90%;
+    padding: 1.5rem;
+    top: 45%;
+  }
+
+  .login-input {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .login-submit {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .login-forgot {
+    font-size: 0.75rem;
+  }
+
+  /* Se eliminan efectos hover en móviles */
+  .login-submit:hover {
+    background: rgb(146, 0, 0);
+  }
+
+  .login-forgot:hover {
+    text-decoration: none;
+  }
+
+  .password-toggle-btn:hover {
+    color: #666;
+  }
 }

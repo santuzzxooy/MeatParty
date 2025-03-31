@@ -2,7 +2,8 @@ import React from "react";
 import "./styles/Header.css";
 import useIsMobile from "../hooks/UseIsMobile";
 import useScrollPosition from "../hooks/useScrollPosition";
-import micro_boy from "./images/micro_boy.gif";
+import micro_boy from "./images/micro_boy.webp";
+import MeatBoy from "./images/MeatBoy.webp";
 import { IoMdArrowDropleftCircle, IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
 
@@ -24,6 +25,7 @@ const Header = () => {
       <div className="header-logo-container">
         <Link to="/MeatParty" className="header-logo">
           {!isMobile && <img src={micro_boy} alt="Logo" className="header-imgLogo" />}
+          {isMobile && <img src={MeatBoy} alt="Logo" className="header-imgLogo" />}
           <h1 className="header-title">Meat Boy Party</h1>
         </Link>
       </div>

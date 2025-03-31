@@ -98,4 +98,10 @@
     .banner-mouse {
         left: 35%;
     }
+
+    .banner-buy-text:hover {
+        box-shadow: none;
+        background-color: rgb(146, 0, 0);
+        color: black;
+    }
 }
