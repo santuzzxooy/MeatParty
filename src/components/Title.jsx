@@ -13,6 +13,7 @@ const Title = ({ title: propTitle }) => {
         "/MeatParty/tickets": "Tickets",
         "/MeatParty/login": "Ingresar",
         "/MeatParty/signup": "Registro",
+        "/MeatParty/carrito": "Carrito",
       };
 
       // Simulacion de fetch

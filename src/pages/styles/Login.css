@@ -1,8 +1,3 @@
-@font-face {
-  font-family: face;
-  src: url("./Road_Rage.otf");
-}
-
 /* Formulario */
 .login-form {
   position: absolute;
@@ -58,6 +53,10 @@
   font-size: 1rem;
   cursor: pointer;
   margin-top: 1rem;
+}
+
+.login-submit:hover{
+  background: rgb(120, 0, 0);
 }
 
 /* Enlace de "Forgot Password" */

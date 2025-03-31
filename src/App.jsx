@@ -1,8 +1,11 @@
 import AppRouter from './router/AppRouter'
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
-    <AppRouter />
+    <CartProvider>
+      <AppRouter />
+    </CartProvider>
   )
 }
 

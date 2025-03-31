@@ -1,6 +1,6 @@
 @font-face {
     font-family: face;
-    src: url("./Road_Rage.otf");
+    src: url("/src/public/Road_Rage.otf");
 }
 
 :root {

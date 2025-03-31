@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "../components/Layout";
 import Home from "../pages/Home";
+import ShoppingCart from "../pages/ShoppingCart";
 import NotFound from "../pages/NotFound";
 import Tickets from "../pages/Tickets";
 import Login from "../pages/Login";
@@ -36,6 +37,10 @@ const AppRouter = () => {
 
       <Route path="/MeatParty/signup">
         <Route index element={<Signup />} />
+      </Route>
+
+      <Route path="/MeatParty/carrito">
+        <Route index element={<ShoppingCart />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />

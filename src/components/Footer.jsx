@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div class="footer">
+        <div className="footer">
             <p>Meat Boy Party ®</p>
             <p>Eres artista? <Link to="/MeatParty">Contactanos</Link></p>
         </div>

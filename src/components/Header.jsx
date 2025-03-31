@@ -5,6 +5,7 @@ import useScrollPosition from "../hooks/useScrollPosition";
 import micro_boy from "./images/micro_boy.webp";
 import MeatBoy from "./images/MeatBoy.webp";
 import { IoMdArrowDropleftCircle, IoMdClose } from "react-icons/io";
+import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -42,6 +43,7 @@ const Header = () => {
         <li><Link className="header-link header-active" to="/MeatParty/tickets">Tickets</Link></li>
         <li><Link className="header-link" to="/MeatParty/login">Ingresar</Link></li>
         <li><Link className="header-link" to="/MeatParty/signup">Registrarme</Link></li>
+        <li><Link className="header-link" to="/MeatParty/carrito"><FaShoppingCart /></Link></li>
       </ul>
     </nav>
   );

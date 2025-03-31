@@ -12,10 +12,11 @@ const Banner = () => {
             <ul>
                 <li><Link to="/MeatParty/tickets" className="banner-text">Tickets Virtuales</Link></li>
                 <li className="banner-buy-container">
-                {!isMobile &&(
-                    <img src={pixelMouse} alt="Mouse pixelado" className="banner-mouse" />
-                )}
-                    <Link to="/MeatParty/tickets" className="banner-buy-text">Comprar</Link>
+                    <Link to="/MeatParty/tickets" className="banner-buy-text">
+                        {!isMobile && (
+                            <img src={pixelMouse} alt="Mouse pixelado" className="banner-mouse" />
+                        )}
+                        Comprar</Link>
                 </li>
             </ul>
         </div>
