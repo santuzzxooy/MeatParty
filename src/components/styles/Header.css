@@ -85,6 +85,33 @@
   right: 20px;
 }
 
+/* Efecto Scroll */
+
+.header-scrolled .header-title {
+  color: white;
+  -webkit-text-stroke: 0.01px black;
+}
+
+.header-scrolled .header-link {
+  color: white;
+  border-color: white;
+}
+
+.header-scrolled .header-link:hover {
+  background-color: black;
+}
+
+.header-scrolled .header-active {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.header-scrolled .header-active:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+}
 
 .fullscreen-loader {
   position: fixed;

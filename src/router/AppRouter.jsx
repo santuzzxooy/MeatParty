@@ -8,7 +8,7 @@ import Signup from "../pages/Signup"
 import micro_boy from "../components/images/micro_boy.gif";
 
 
-const homeImages = [micro_boy, "https://i.postimg.cc/mrbynkz8/banner.jpg"];
+const homeImages = [micro_boy, "https://i.postimg.cc/mrbynkz8/banner.jpg", "https://picsum.photos/300?random=4"];
 const ticketsImages = [micro_boy];
 const signInImages = [micro_boy];
 
