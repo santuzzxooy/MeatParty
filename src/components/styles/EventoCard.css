@@ -4,7 +4,8 @@
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 0;
+    padding-top: 0;
     z-index: 500;
 }
 
@@ -23,7 +24,9 @@
     font-weight: bold;
     text-align: center;
     padding: 10px 20px;
-    color: white;
+    padding-top: 0;
+    margin-top: 10px;
+    color: rgb(146, 0, 0);
     z-index: 2;
 }
 
@@ -112,9 +115,16 @@
     transform: scale(1.1);
 }
 
+/* Ajuste para centrar la última fila en pantallas de 1024px */
 @media (max-width: 1024px) {
     .card-evento-grid {
         grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+    .card-evento-grid > *:nth-child(4) {
+        grid-column: 2 / 3; /* Centra el último elemento en la segunda columna */
+        justify-self: center;
     }
 }
 

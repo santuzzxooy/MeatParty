@@ -8,7 +8,8 @@
         { "text": "1 Ticket", "icon": "IoTicketOutline" },
         { "text": "Precio full", "icon": "TbMoodSadDizzy" },
         { "text": "Caramelo de soledad", "icon": "LuCandy" }
-      ]
+      ],
+      "tickets": 1
     },
     {
       "id": 2,
@@ -19,7 +20,8 @@
         { "text": "2 Tickets", "icon": "IoTicketOutline", "repeat": 2 },
         { "text": "Descuento 15%", "icon": "LiaPiggyBankSolid" },
         { "text": "Descuento 15%", "icon": "LiaPiggyBankSolid" }
-      ]
+      ],
+      "tickets": 2
     },
     {
       "id": 3,
@@ -30,6 +32,7 @@
         { "text": "5 Tickets", "icon": "IoTicketOutline", "repeat": 5 },
         { "text": "Descuento 20%", "icon": "LiaPiggyBankSolid", "repeat": 2 },
         { "text": "Descuento 15%", "icon": "LiaPiggyBankSolid" }
-      ]
+      ],
+      "tickets": 5
     }
   ]

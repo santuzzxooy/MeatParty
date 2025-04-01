@@ -1,0 +1,27 @@
+.homecard-container {
+    padding-top: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  
+  .homecard-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+    .homecard-container {
+      padding: 25px 15px 0 15px;
+      margin-bottom: 0;
+    }
+  
+    .homecard-title {
+      font-size: 20px;
+    }
+  
+  }

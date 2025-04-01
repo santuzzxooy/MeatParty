@@ -6,6 +6,7 @@ import EventoCard from "../components/EventoCard";
 import TelegramCard from "../components/TelegramCard"
 import Telegram from "../components/Telegram";
 import Footer from '../components/Footer'
+import HomeCard from "../components/HomeCard"
 import "../App.css";
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
       <Header />
       <div className="principMain-content">
         <Banner />
+        <HomeCard />
         <EventoCard />
         <TelegramCard />
         <Telegram />

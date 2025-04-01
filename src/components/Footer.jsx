@@ -1,13 +1,15 @@
-import './styles/Footer.css'
+import './styles/Footer.css';
 import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
         <div className="footer">
-            <p>Meat Boy Party ®</p>
-            <p>Eres artista? <Link to="/MeatParty">Contactanos</Link></p>
+            <div className="footer-content">
+                <p>Meat Boy Party ®</p>
+                <p>Eres DJ? <Link to="/MeatParty">Contactanos</Link></p>
+            </div>
         </div>
-    )
+    );
 }
 
-export default Footer
+export default Footer;

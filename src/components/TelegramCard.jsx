@@ -5,7 +5,7 @@ import { FaTelegram } from "react-icons/fa";
 const TelegramCard = () => {
   return (
     <div className="telegram-card">
-      <h2 className="telegram-title">¿Por qué usamos Telegram?</h2>
+      <h2 className="telegram-title">¿Por qué usamos Telegram? <FaTelegram /></h2>
       <p className="telegram-text">
         Telegram <FaTelegram /> es la mejor opción para organizar un rave underground gracias a su anonimato, 
         permitiendo chats sin revelar números de teléfono. Sus canales facilitan la difusión de 

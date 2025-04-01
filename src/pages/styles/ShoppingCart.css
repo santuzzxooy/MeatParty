@@ -74,9 +74,16 @@
   text-align: right;
   font-size: 35px;
   font-weight: bold;
-  margin-top: 20px;
   color: white;
   -webkit-text-stroke: 0.1px black;
+}
+
+.cart-total-precio{
+  margin: 0;
+}
+
+.cart-total-precio:last-child{
+  margin-bottom: 18px;
 }
 
 /* Para mejorar la visualización en móviles */
@@ -84,10 +91,19 @@
   .cart-container {
     width: 90%;
   }
+
+  .cart-total-precio{
+    font-size: 20px;
+  }
+
+  .cart-item {
+    font-size: 20px;
+  }
+
   .cart-gotickets {
-    flex-direction: column; /* Cambiar la dirección del contenedor para poner la imagen arriba del texto */
-    align-items: center; /* Alineamos los elementos en el centro */
-    text-align: center; /* Centrar el texto */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .cart-gotickets img {
