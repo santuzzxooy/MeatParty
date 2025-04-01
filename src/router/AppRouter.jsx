@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "../components/Layout";
 import Home from "../pages/Home";
+import Info from "../pages/Info";
 import ShoppingCart from "../pages/ShoppingCart";
 import NotFound from "../pages/NotFound";
 import Tickets from "../pages/Tickets";
@@ -19,6 +20,7 @@ const homeImages = [micro_boy, pixelMouse,
 
 const ticketsImages = [micro_boy];
 const signInImages = [micro_boy];
+const infoImages = ["https://picsum.photos/1920/200"];
 
 const AppRouter = () => {
   return (
@@ -29,6 +31,10 @@ const AppRouter = () => {
 
       <Route path="/MeatParty/tickets" element={<Layout loadingImages={ticketsImages} />}>
         <Route index element={<Tickets />} />
+      </Route>
+
+      <Route path="/MeatParty/info" element={<Layout loadingImages={infoImages} />}>
+        <Route index element={<Info />} />
       </Route>
 
       <Route path="/MeatParty/Login" element={<Layout loadingImages={signInImages} />}>

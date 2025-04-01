@@ -1,8 +1,8 @@
 /* Contenedor principal del carrito */
 .cart-container {
-  width: 60%; /* Limita el ancho */
-  max-width: 800px; /* No crece más de 800px */
-  margin: 0 auto; /* Centrar el carrito */
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -107,15 +107,15 @@
   }
 
   .cart-gotickets img {
-    width: 80px; /* Ajustar el tamaño de la imagen en móviles */
-    margin-bottom: 10px; /* Añadimos espacio entre la imagen y el texto */
+    width: 80px;
+    margin-bottom: 10px;
   }
 
   .cart-empty p {
-    font-size: 20px; /* Reducir el tamaño de la fuente para móviles */
+    font-size: 20px;
   }
 
   .cart-empty .banner-buy-text {
-    font-size: 16px; /* Reducir el tamaño del texto del enlace */
+    font-size: 16px;
   }
 }

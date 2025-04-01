@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "./styles/EventoCard.css";
 
 const defaultEventCards = [
-  { title: "DJs", img: "https://i.postimg.cc/yY6cBxdL/dj.jpg", url: "/MeatParty/tickets" },
-  { title: "Ubicación", img: "https://i.postimg.cc/x893DCrS/rave.jpg", url: "/MeatParty/tickets" },
-  { title: "Etapas", img: "https://i.postimg.cc/prKmJNqc/etapas.jpg", url: "/MeatParty/tickets" },
-  { title: "Más", img: "https://i.postimg.cc/k57dY0wR/mas.png", url: "/MeatParty/tickets" },
+  { title: "DJs", img: "https://i.postimg.cc/yY6cBxdL/dj.jpg", url: "/MeatParty/info#djs" },
+  { title: "Ubicación", img: "https://i.postimg.cc/x893DCrS/rave.jpg", url: "/MeatParty/info#ubicacion" },
+  { title: "Etapas", img: "https://i.postimg.cc/prKmJNqc/etapas.jpg", url: "/MeatParty/info" },
+  { title: "Más", img: "https://i.postimg.cc/k57dY0wR/mas.png", url: "/MeatParty/info" },
 ];
 
 const EventoCard = () => {
@@ -36,13 +36,15 @@ const EventoCard = () => {
   return (
     <div className="card-evento-container">
       <div className="card-evento-title-container">
-        <h1 className="card-evento-title">Sobre el evento</h1>
+        <Link className="card-evento-title-link" to="/MeatParty/info">
+          <h1 className="card-evento-title">Sobre el evento</h1>
+        </Link>
       </div>
       {loading && <p>Cargando eventos...</p>}
       {error && <p>{error}</p>}
       <div className="card-evento-grid">
         {eventCards.map((event) => (
-          <Link to={event.url} key={event.title}> {/* Usa event.title como key */}
+          <Link to={event.url} key={event.title}>
             <div className="card-evento-card">
               <img src={event.img} alt={event.title} className="card-evento-image" />
               <span className="card-evento-label">{event.title}</span>

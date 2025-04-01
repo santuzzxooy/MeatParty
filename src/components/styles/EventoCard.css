@@ -19,6 +19,10 @@
     margin: 0 auto;
 }
 
+.card-evento-title-link {
+    text-decoration: none;
+}
+
 .card-evento-title {
     font-size: 28px;
     font-weight: bold;
