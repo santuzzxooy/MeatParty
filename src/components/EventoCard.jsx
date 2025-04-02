@@ -5,8 +5,8 @@ import "./styles/EventoCard.css";
 const defaultEventCards = [
   { title: "DJs", img: "https://i.postimg.cc/yY6cBxdL/dj.jpg", url: "/MeatParty/info#djs" },
   { title: "Ubicación", img: "https://i.postimg.cc/x893DCrS/rave.jpg", url: "/MeatParty/info#ubicacion" },
-  { title: "Etapas", img: "https://i.postimg.cc/prKmJNqc/etapas.jpg", url: "/MeatParty/info" },
-  { title: "Más", img: "https://i.postimg.cc/k57dY0wR/mas.png", url: "/MeatParty/info" },
+  { title: "Etapas", img: "https://i.postimg.cc/prKmJNqc/etapas.jpg", url: "/MeatParty/info#etapas" },
+  { title: "Más", img: "https://i.postimg.cc/k57dY0wR/mas.png", url: "/MeatParty/info#mas" },
 ];
 
 const EventoCard = () => {

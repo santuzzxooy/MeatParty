@@ -33,3 +33,63 @@
 .title-container::after {
     right: 0;
 }
+
+@media (max-width: 768px) {
+    .title-container {
+        margin-top: 70px;
+    }
+
+    .title-container h1 {
+        font-size: 40px;
+    }
+
+    .title-container::before,
+    .title-container::after {
+        width: calc(50% - 100px);
+        /* Reduce el ancho de las decoraciones */
+        height: 5px;
+    }
+}
+
+/* Móvil (480px) */
+@media (max-width: 480px) {
+    .title-container {
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+
+    .title-container h1 {
+        font-size: 32px;
+        padding: 0 10px;
+    }
+
+    .title-container::before,
+    .title-container::after {
+        width: calc(50% - 80px);
+        /* Más reducido para móviles */
+        height: 4px;
+    }
+}
+
+/* Móvil pequeño (360px) */
+@media (max-width: 360px) {
+    .title-container h1 {
+        font-size: 28px;
+    }
+
+    .title-container::before,
+    .title-container::after {
+        width: calc(50% - 70px);
+        height: 3px;
+    }
+}
+
+/* Opcional: Para pantallas muy grandes */
+@media (min-width: 1600px) {
+
+    .title-container::before,
+    .title-container::after {
+        width: calc(50% - 200px);
+        /* Decoraciones más largas */
+    }
+}

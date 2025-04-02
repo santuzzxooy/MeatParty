@@ -27,7 +27,7 @@ const Header = () => {
         <Link to="/MeatParty" className="header-logo">
           {!isMobile && <img src={micro_boy} alt="Logo" className="header-imgLogo" />}
           {isMobile && <img src={MeatBoy} alt="Logo" className="header-imgLogo" />}
-          <h1 className="header-title">Meat Boy Party</h1>
+          <h1 className="header-title">HardCode</h1>
         </Link>
       </div>
 
