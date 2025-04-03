@@ -54,7 +54,6 @@
 /* Móvil (480px) */
 @media (max-width: 480px) {
     .title-container {
-        margin-top: 50px;
         padding: 0 15px;
     }
 

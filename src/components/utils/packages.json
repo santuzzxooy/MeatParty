@@ -1,0 +1,26 @@
+[
+    {
+      "id": 2,
+      "name": "Duo",
+      "price": 50,
+      "currency": "K",
+      "features": [
+        { "text": "2 Tickets", "icon": "IoTicketOutline", "repeat": 2 },
+        { "text": "Descuento 15%", "icon": "LiaPiggyBankSolid" }
+      ],
+      "tickets": 2,
+      "type": "package"
+    },
+    {
+      "id": 3,
+      "name": "Panas",
+      "price": 120,
+      "currency": "K",
+      "features": [
+        { "text": "5 Tickets", "icon": "IoTicketOutline", "repeat": 5 },
+        { "text": "Descuento 20%", "icon": "LiaPiggyBankSolid" }
+      ],
+      "tickets": 5,
+      "type": "package"
+    }
+  ]

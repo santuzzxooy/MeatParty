@@ -9,14 +9,26 @@ const initialState = {
 const cartReducer = (state, action) => {
   switch (action.type) {
     case "ADD_TO_CART":
-      const existingItem = state.cart.find((item) => item.id === action.payload.id);
-      const updatedItem = { ...action.payload, price: action.payload.price * 1000 };
+      const existingItem = state.cart.find(
+        (item) => item.id === action.payload.id && item.type === action.payload.type
+      );
+      const updatedItem = {
+        ...action.payload,
+        price: action.payload.price * 1000, // Convertir a valor numérico completo (30K -> 30000)
+        tickets: action.payload.tickets || 1, // Asegurar cantidad de tickets
+      };
 
       if (existingItem) {
         return {
           ...state,
           cart: state.cart.map((item) =>
-            item.id === action.payload.id ? { ...item, quantity: item.quantity + 1 } : item
+            item.id === action.payload.id && item.type === action.payload.type
+              ? {
+                  ...item,
+                  quantity: item.quantity + 1,
+                  tickets: item.tickets, // Mantener el número original de tickets
+                }
+              : item
           ),
         };
       } else {
@@ -26,14 +38,22 @@ const cartReducer = (state, action) => {
         };
       }
 
-    case "REMOVE_FROM_CART":
+      case "REMOVE_COMPLETELY":
+        return {
+          ...state,
+          cart: state.cart.filter(
+            (item) => !(item.id === action.payload.id && item.type === action.payload.type)
+          )
+        };
+
+    case "UPDATE_QUANTITY":
       return {
         ...state,
-        cart: state.cart
-          .map((item) =>
-            item.id === action.payload ? { ...item, quantity: item.quantity - 1 } : item
-          )
-          .filter((item) => item.quantity > 0),
+        cart: state.cart.map((item) =>
+          item.id === action.payload.id && item.type === action.payload.type
+            ? { ...item, quantity: action.payload.newQuantity }
+            : item
+        ),
       };
 
     case "CLEAR_CART":
@@ -51,11 +71,25 @@ const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
-  return (
-    <CartContext.Provider value={{ cart: state.cart, dispatch }}>
-      {children}
-    </CartContext.Provider>
+  // Calcular totales
+  const cartTotal = state.cart.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
   );
+
+  const ticketsTotal = state.cart.reduce(
+    (total, item) => total + (item.tickets * item.quantity),
+    0
+  );
+
+  const value = {
+    cart: state.cart,
+    cartTotal,
+    ticketsTotal,
+    dispatch,
+  };
+
+  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 };
 
 // Hook personalizado para usar el contexto del carrito

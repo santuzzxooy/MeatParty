@@ -115,6 +115,14 @@
   color: #ff0000;
 }
 
+.prices-section-title {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .prices-cards-wrapper {
